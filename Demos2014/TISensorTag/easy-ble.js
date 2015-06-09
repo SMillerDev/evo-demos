@@ -361,7 +361,6 @@ var easyble = (function()
 		evothings.ble.readDescriptor(
 			device.deviceHandle,
 			descriptor.handle,
-			value,
 			function()
 			{
 				win();
