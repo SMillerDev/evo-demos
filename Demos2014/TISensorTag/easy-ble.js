@@ -361,9 +361,9 @@ var easyble = (function()
 		evothings.ble.readDescriptor(
 			device.deviceHandle,
 			descriptor.handle,
-			function()
+			function(data)
 			{
-				win();
+				win(data);
 			},
 			function(errorCode)
 			{
@@ -384,9 +384,9 @@ var easyble = (function()
 			device.deviceHandle,
 			characteristic.handle,
 			value,
-			function()
+			function(data)
 			{
-				win();
+				win(data);
 			},
 			function(errorCode)
 			{
@@ -407,9 +407,9 @@ var easyble = (function()
 			device.deviceHandle,
 			descriptor.handle,
 			value,
-			function()
+			function(data)
 			{
-				win();
+				win(data);
 			},
 			function(errorCode)
 			{
